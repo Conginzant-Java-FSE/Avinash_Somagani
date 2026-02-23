@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  height: 40vh;
+  text-align: center;
+}
+h2{
+    font-size: 60px;
+}
+h3{
+    font-size: 30px;
+    margin-top: 10px;
+    color: rgb(96, 210, 79);
+}
+
+button {
+
+  padding: 10px 20px;
+  font-size: small;
+  background-color: #171717;
+  color: white;
+  border-radius: 5px;
+}

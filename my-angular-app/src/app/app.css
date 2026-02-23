@@ -1,0 +1,20 @@
+nav {
+  background-color: #9ac1ff;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+hr {
+  margin: 0;
+}

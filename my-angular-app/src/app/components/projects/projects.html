@@ -1,0 +1,16 @@
+
+<h2>Projects</h2>
+
+<div *ngFor="let project of projects">
+
+  <h3>{{project.name}}</h3>
+
+  <button (click)="toggle(project)">
+    Show Details
+  </button>
+
+  <p *ngIf="project.show">
+    {{project.details}}
+  </p>
+
+</div>

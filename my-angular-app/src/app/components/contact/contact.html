@@ -1,0 +1,11 @@
+<h2>Contact</h2>
+
+<p>Phone: {{phone}}</p>
+
+<button (click)="toggleEmail()">
+  Show Email
+</button>
+
+<p *ngIf="showEmail">
+  {{email}}
+</p>
