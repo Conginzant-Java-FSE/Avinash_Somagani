@@ -1,16 +1,22 @@
+<section class="projects-section">
+  <h2>Projects</h2>
 
-<h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card glass-card" *ngFor="let project of projects">
+      <h3>{{project.name}}</h3>
 
-<div *ngFor="let project of projects">
+      <div class="tech-stack">
+        <span class="tech-badge" *ngFor="let tech of project.techStack">{{tech}}</span>
+      </div>
 
-  <h3>{{project.name}}</h3>
+      <div class="project-content" [class.expanded]="project.show">
+        <p class="details-text">{{project.details}}</p>
+      </div>
 
-  <button (click)="toggle(project)">
-    Show Details
-  </button>
-
-  <p *ngIf="project.show">
-    {{project.details}}
-  </p>
-
-</div>
+      <button class="toggle-btn" (click)="toggle(project)" [class.active]="project.show">
+        {{ project.show ? 'View Less' : 'View Details' }}
+        <span class="arrow" [class.up]="project.show">▼</span>
+      </button>
+    </div>
+  </div>
+</section>

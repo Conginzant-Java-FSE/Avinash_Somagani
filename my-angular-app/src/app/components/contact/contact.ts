@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 export class ContactComponent {
 
   email="avinash@gmail.com";
-  phone="9999999999";
+  phone=" 9666193143 ";
 
   showEmail=false;
 

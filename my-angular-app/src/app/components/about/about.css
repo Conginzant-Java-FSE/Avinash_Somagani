@@ -1,8 +1,55 @@
-h1 {
-  font-size: 40px;
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-p {
-  font-size: 18px;
-  color: #555;
+.objective-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 30px;
+  border-left: 4px solid var(--primary);
+}
+
+.objective-box h3 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.objective-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-item .label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-item .value {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 500;
 }

@@ -1,7 +1,23 @@
-<h2>About Me</h2>
+<section class="about-section glass-card">
+    <h2>About Me</h2>
 
-<p>Date of Birth: {{ dob | date }}</p>
+    <div class="objective-box">
+        <h3>Career Objective</h3>
+        <p class="objective-text">{{ careerObjective }}</p>
+    </div>
 
-<p>Experience: {{ experience | number }} Years</p>
-
-<p>Level: {{ experience | experienceLevel }}</p>
+    <div class="info-grid">
+        <div class="info-item">
+            <span class="label">Date of Birth</span>
+            <span class="value">{{ dob | date }}</span>
+        </div>
+        <div class="info-item">
+            <span class="label">Experience</span>
+            <span class="value">{{ experience | number }} Years</span>
+        </div>
+        <div class="info-item">
+            <span class="label">Level</span>
+            <span class="value">{{ experience | experienceLevel }}</span>
+        </div>
+    </div>
+</section>
